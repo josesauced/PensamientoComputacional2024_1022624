@@ -1,0 +1,43 @@
+# #Imprime la tabla de miultiplicar de un nùmero 
+
+# print("Ingrese un numero")
+# numero = int(input("Ingrese el nùmero"))
+# print("Tabla de multimplicar del nuemro ingresado:")
+# for Multiplicador in range(1,11):
+#     resultado = numero * Multiplicador 
+#     print(numero,"*", Multiplicador, "=", resultado )
+
+#Imprime si el nùero es primo 
+def es_primo (numero):
+    if numero <=1: 
+        return False 
+    divisor = 2 
+     while divisor * divisor <= numero:
+       if numero % divisor ==0:
+          return False 
+       divisor +=1
+    return True
+numero = int (input("ingrese un numero para verificar si es primo:"))
+if es_primo(numero): 
+   print (f"{numero} es un nuemro primo.")
+else:
+    print (f"{numero} no es un nuemro primo.")
+
+# #Imprime la suma del numero 
+# def sum_hasta(numero):
+#     sum = 0
+#     for i in range(1, numero + 1):
+#         sum += 1
+#     return sum 
+
+# try: 
+
+# numero = int(input("Ingrese el nùmero:"))
+# if numero > 0:
+#     resultado = sum_hasta(numero)
+#     print(f"Lasuma desde 1 hasta {numero} es: {resultado}")
+# else: 
+#     print("Ingrese un numero positivo.")
+#     except ValueError:
+#     print("Error: Ingrese un numero valido.")
+
